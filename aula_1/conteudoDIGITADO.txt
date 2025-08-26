@@ -1,0 +1,15 @@
+arquivo.h define as definições das funções, mas nn as compila
+arquivo.c possui apenas as funções a serem compiladas
+
+OPERAÇÃO BASICA:
+
+criação do TAD:
+inserção de um novo elemento no TAD
+remoção de um elemento do TAD
+busca de um elemento no TAD
+impressão do TAD
+liberação da memória alocada para o TAD
+
+
+
+<include> "ponto.h"
