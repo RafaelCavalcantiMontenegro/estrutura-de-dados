@@ -13,3 +13,6 @@ liberação da memória alocada para o TAD
 
 
 <include> "ponto.h"
+
+quando se tem 2 códigos .c, é necessario executar os dois códigos ao msm tempo, e o ponto.h só serve para modularizar o códigos
+
