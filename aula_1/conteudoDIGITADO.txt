@@ -16,3 +16,13 @@ liberação da memória alocada para o TAD
 
 quando se tem 2 códigos .c, é necessario executar os dois códigos ao msm tempo, e o ponto.h só serve para modularizar o códigos
 
+COMIT
+
+para entrar em uma pasta:
+cd <nome da pasta>
+
+para sair da pasta e ir para uma superior:
+cd ..
+
+para excutar um programa:
+ggc <nome do programa.c> -o <programa quem vai ser usado na saida> - ln
