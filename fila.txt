@@ -1,0 +1,26 @@
+FILA
+
+o primeiro que chega também é a primeira que sai
+
+em fila é necessário sabermos o incio, final e tamanho 
+
+inicio, final e quantidade aponta inicialmente para ZERO
+
+se a quantidade da fila for igual ao maximo, ela retorna 1, se não estiver, retorna ZERO
+
+sempre inserir um elemento no final da fila
+
+INICIO E FINAL 
+
+- quando o elementos estão sendo adicionados, o inicio permanece ZERO e o final cresce +1 para cada elemento
+
+- se alguem elemento sair da fila, o inicio se move para o direita enquanto o final permanece estático
+
+PERCORRER O VETOR DE FORMA CIRCULAR
+
+dividir a posição pelo maximo com resto.
+
+EXEMPLO:
+10 = 2*5 + 0 
+
+
