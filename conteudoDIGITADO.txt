@@ -11,6 +11,7 @@ impressão do TAD
 liberação da memória alocada para o TAD
 
 
+CRIAÇÃO DE BIBLIOTECA:
 
 <include> "ponto.h"
 
@@ -25,4 +26,17 @@ para sair da pasta e ir para uma superior:
 cd ..
 
 para excutar um programa:
-ggc <nome do programa.c> -o <programa quem vai ser usado na saida> - ln
+ggc <nome do programa.c> -o <programa quem vai ser usado na saida> 
+
+executar o arquivo na pasta nessa pasta:
+
+./main
+
+PONTEIRO QUE APONTA PARA UM PONTEIRO:
+
+<asterisco><asterisco><variaveis>
+
+não aponta mais para uma variavel, aponta para outro ponteiro e esse outro ponteiro aponta para a variavel
+
+serve para manipular endereços de ponteiros
+

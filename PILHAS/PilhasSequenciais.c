@@ -40,7 +40,7 @@ int pilha_vazia(Pilha* pi) {
     }
     return (pi->qtd == 0); // Retorna 1 se a pilha estiver vazia, caso contrário retorna 0
 }
-int insere_pilha(Pilha *pi, struct aluno al) {
+int insere_Pilha(Pilha *pi, struct aluno al) {
     if(pi == NULL) {
         return 0;
     }
