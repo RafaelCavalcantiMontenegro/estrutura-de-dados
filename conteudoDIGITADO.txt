@@ -40,3 +40,19 @@ não aponta mais para uma variavel, aponta para outro ponteiro e esse outro pont
 
 serve para manipular endereços de ponteiros
 
+LISTA:
+
+STACK:  local na memória que armazena dados temporários, guardando os valores dass funções e subprogramas, quando terminar a execução os valores saem da memoria
+
+HEAP : é o local de alocação dinâmica da memória, definida pelo programador
+
+lista inicializa como NULL, vazio.
+
+COMO CHECAR O TAMANHO DA LISTA:
+
+passa o ponteiro para ponteiro como parametro
+
+se der algum problema com o ponteiro, como ele apontar para um espaço vazio, o código da um loop para garantir q a lista não está mnais vazia
+
+tudo tem q estar na memória
+
