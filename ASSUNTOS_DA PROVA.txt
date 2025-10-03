@@ -1,4 +1,0 @@
-- TAD 
-- pilhas estáticas
-- filas estáticas
-- lista unicamente encadeada

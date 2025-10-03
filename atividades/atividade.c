@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <atividade.h>
+#include "atividade.h"
 
 struct Cubo {
     float aresta;
@@ -10,7 +10,7 @@ struct Cubo {
 Cubo* Cubo_Criar(float a) {
     struct Cubo* c = (struct Cubo*)malloc(sizeof(struct Cubo));
     c->aresta = a;
-    return 0;
+    return c;
 }
 
 
@@ -19,26 +19,29 @@ void Cubo_Destruir(Cubo* c){
 };
 
 float Cubo_Acessar(Cubo* c) {
-    if (c == NULL) return -1;
     return c->aresta;
 }
 
 void Cubo_Atribuir(Cubo* c, float a) {
     if (c != NULL) {
+        printf("Digite o novo valor da aresta do cubo: ");
+        scanf("%f", &a);
         c->aresta = a;
+    
     }
+    
 }
 
-void Cubo_area(struct Cubo* c) {
+float Cubo_Area(struct Cubo* c) {
     float area = 6 * (c->aresta * c->aresta);
-    printf("Área do cubo: %.2f\n", area);
+    return area;
 }
 
 
 
 
-float Cubo_Volume(Cubo* c, float a) {
-    float volume = a * a * a;
-    printf("Volume do cubo: %.2f\n", volume);
+float Cubo_Volume(Cubo* c) {
+    float volume = c->aresta * c->aresta * c->aresta;
+    return volume;
 }
 

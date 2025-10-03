@@ -17,4 +17,4 @@ void Cubo_Atribuir(Cubo* c, float a);
 float Cubo_Area(Cubo* c);
 
 // Calcula o volume do cubo
-float Cubo_Volume(Cubo* c, float a);
+float Cubo_Volume(Cubo* c);
