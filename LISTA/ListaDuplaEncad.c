@@ -83,3 +83,15 @@ int Busca_lista(Lista* li, int valor) {
     }
     return 0;
 }
+
+void libera_lista(Lista* li) {
+    if (li != NULL) {
+        Elem *No = li -> inicio;
+        while (No != NULL) {
+            Elem *prox = No -> prox;
+            free(No);
+            No = prox;
+        }
+        free(li);
+    }
+}

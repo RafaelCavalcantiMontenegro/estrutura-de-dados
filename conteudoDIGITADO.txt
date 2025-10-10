@@ -56,3 +56,12 @@ se der algum problema com o ponteiro, como ele apontar para um espaço vazio, o 
 
 tudo tem q estar na memória
 
+LISTA CIRCULAR: 
+
+o ultimo elemento sempre aponta para o inicio da lista
+não exite NULL
+o ponteiro aponta para o final da lista, facilitando o acesso tanto para chegar ao inicio quanto ao final.
+
+O DE N:
+
+é o número de passo para se realizar um programa
