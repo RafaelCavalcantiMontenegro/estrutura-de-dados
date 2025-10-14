@@ -71,7 +71,7 @@ int lista_tamanho(Lista* li) {
     return (li -> qtd);
 }
 
-int remover_inicio(Lista *li) {
+int remover_inicio(Lista* li) {
     if (li == NULL || li -> final == NULL) return 0;
     Elem*No_inicio = li -> final -> prox;
     if (No_inicio == li -> final) {
@@ -84,7 +84,7 @@ int remover_inicio(Lista *li) {
     return 1;
 }
 
-int remover_final(Lista *li) {
+int remover_final(Lista* li) {
     if (li == NULL || li -> final = NULL) return 0;
     Elem *No_final = li -> final;
     Elem *No_inicio = No_final -> prox;
@@ -102,3 +102,23 @@ int remover_final(Lista *li) {
     li -> qtd--;
     return 1;
 }
+
+void libera_lista(Lista* li) {
+    if (li == NULL) return;
+    if (li -> final == NULL) {
+        free(li);
+        return;
+    }
+    if (li != NULL) {
+        Elem *No_inicio = li -> final -> prox;
+        Elem *aux;
+        while (No_inicio != li -> final) {
+            aux = No_inicio;
+            No_inicio = No_inicio -> prox;
+            free(aux);
+        }
+        free(li -> final);
+        free(li);
+    }
+}
+
