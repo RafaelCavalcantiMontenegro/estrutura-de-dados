@@ -65,3 +65,41 @@ o ponteiro aponta para o final da lista, facilitando o acesso tanto para chegar 
 O DE N:
 
 é o número de passo para se realizar um programa
+
+
+ANALIZE DE ALGORITIMOS: 
+- área focada em algoritimos para otimização;
+
+BUSCA E ORDENAÇÃO:
+- busca binaria;
+- busca binaria é muito mais eficiente doque a busca sequenciais quando usadas em larga escala;
+- CUSTO = MEMORIA + TEMPO;
+- com o custo do algoritimo conseguimos determinar sua eficiencia dependendo do tamanho da entrada;
+
+
+ANALIZE EMPÍRICA:
+
+ANALIZE MATEMATICA:
+- IF TEM CUSTO ZERO;
+
+        EXEMPLO
+            int M = A[0]; // primeira linha custo 1 (acessar A[0] e atribuir)
+            for(i = 0; i <n; i++) { // custo 2 (i =0 e prmeira comparação i < n)
+                                    // custo 2 (i++ e comparação i < n)
+                if (A[i] >= M) { 
+                    M = A[i];
+                }
+            }       
+
+            f(n) = 2n + 3, 3 no incio +2n por interação
+
+
+comportamento assintótico: oque acontece com N quando ele tende ao infinito
+
+DEPENDE DO TIPO DE ENTRADA, EXISTEM CASOS EM Q IF NÃO IRA EXECUTAR.
+
+BIG-O serve para representar o comportamento assintótico de N no pior caso possível;
+
+TABELA HEX:
+
+
