@@ -100,6 +100,37 @@ DEPENDE DO TIPO DE ENTRADA, EXISTEM CASOS EM Q IF NÃO IRA EXECUTAR.
 
 BIG-O serve para representar o comportamento assintótico de N no pior caso possível;
 
-TABELA HEX:
+TABELA HESH:
+
+o proprio elemento fala aonde ele está no vetor;
+a tabela hash é um vetor;
+
+        struct aluno {
+            char nome;
+            int nota;
+            int mat[5]
+        }
 
 
+    permite acesso rápido aos dados médios
+FUNÇÃO DE HASING:   
+    objetivo é transformar uma chave em um índice do array da tabela Hash.
+    espalha uniformemente as chaves nas posições.
+    
+    MÉTODO DA DIVISÃO:
+        função: calcula a possição do array a partir a chave k.
+        metodo da divisão é o mais semples e direto.
+                h(k) = k mod TABLE_SIZE
+        o operador módulo retorna o resto da divisão inteira da chave pelo tamanho da tabela.
+        EXEMPLO:
+                    h(37) = 37 mod 11 = 4
+                elemento de chave 37 será armazenado na posições 4, pq é o resto da divisão entre 37 e 11
+    
+    METODO DA MULTIPLICAÇÃO:   
+        usa uma constante fracionaria irracional A. cin valor entre 0 e 1.
+        calcula a pisição com base na parte fracionaria do produto k x A.
+
+            h(k) = parte_inteira(TABLE_SIZE x parte_fracionaria(k x A))
+
+    a parte fracionaria se comporta como um valor "quase aleatório", oq garante bom espalhamento
+    
